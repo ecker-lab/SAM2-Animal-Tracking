@@ -1,0 +1,16 @@
+outputs/*
+!outputs/.gitignore
+*.egg-info
+
+mmcv/*
+!mmcv/.gitignore
+
+# Ignore Python cache files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Ignore SLURM files
+jobscript.sh
+slurm_files/*
+slurm_files

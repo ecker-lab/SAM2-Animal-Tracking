@@ -1,0 +1,309 @@
+MotChallenge2DBox
+
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/gsam2/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/gsam2/lib/python3.12/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/vlm/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/vlm/TrackEval/trackeval/eval.py", line 195, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/vlm/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/vlm/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 365, in get_preprocessed_seq_data
+    raise(TrackEvalException('Attempting to evaluate using invalid gt classes. '
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 0: 0
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/vlm/TrackEval/trackeval/eval.py", line 81, in evaluate
+    results = pool.map(_eval_sequence, seq_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/gsam2/lib/python3.12/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/gsam2/lib/python3.12/multiprocessing/pool.py", line 774, in get
+    raise self._value
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 0: 0
+
+
+
+
+
+MotChallenge2DBox
+
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/gsam2/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/gsam2/lib/python3.12/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 191, in eval_sequence
+    raw_data = dataset.get_raw_seq_data(tracker, seq)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/_base_dataset.py", line 92, in get_raw_seq_data
+    raw_gt_data = self._load_raw_file(tracker, seq, is_gt=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 219, in _load_raw_file
+    raise TrackEvalException(
+trackeval.utils.TrackEvalException: Ground-truth data contains the following invalid timesteps in seq fish-2: 0, 
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 81, in evaluate
+    results = pool.map(_eval_sequence, seq_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/gsam2/lib/python3.12/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/gsam2/lib/python3.12/multiprocessing/pool.py", line 774, in get
+    raise self._value
+trackeval.utils.TrackEvalException: Ground-truth data contains the following invalid timesteps in seq fish-2: 0, 
+
+
+
+
+
+MotChallenge2DBox
+
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 195, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 365, in get_preprocessed_seq_data
+    raise(TrackEvalException('Attempting to evaluate using invalid gt classes. '
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 4: 0
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 81, in evaluate
+    results = pool.map(_eval_sequence, seq_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 774, in get
+    raise self._value
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 4: 0
+
+
+
+
+
+MotChallenge2DBox
+
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 195, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 365, in get_preprocessed_seq_data
+    raise(TrackEvalException('Attempting to evaluate using invalid gt classes. '
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 11: 0
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 81, in evaluate
+    results = pool.map(_eval_sequence, seq_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 774, in get
+    raise self._value
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 11: 0
+
+
+
+
+
+MotChallenge2DBox
+
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+           ^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 195, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+           ^^^^^^^^^^^^^^
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 365, in get_preprocessed_seq_data
+    raise(TrackEvalException('Attempting to evaluate using invalid gt classes. '
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 4: 0
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 81, in evaluate
+    results = pool.map(_eval_sequence, seq_list)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/bytetrack/lib/python3.12/multiprocessing/pool.py", line 774, in get
+    raise self._value
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 4: 0
+
+
+
+
+
+MotChallenge2DBox
+
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/_base_dataset.py", line 159, in _load_simple_text_file
+    dialect = csv.Sniffer().sniff(fp.readline(), delimiters=force_delimiters)  # Auto determine structure.
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/csv.py", line 187, in sniff
+    raise Error("Could not determine delimiter")
+_csv.Error: Could not determine delimiter
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 191, in eval_sequence
+    raw_data = dataset.get_raw_seq_data(tracker, seq)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/_base_dataset.py", line 93, in get_raw_seq_data
+    raw_tracker_data = self._load_raw_file(tracker, seq, is_gt=False)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 200, in _load_raw_file
+    read_data, ignore_data = self._load_simple_text_file(file, is_zipped=self.data_is_zipped, zip_file=zip_file)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/_base_dataset.py", line 209, in _load_simple_text_file
+    raise TrackEvalException(
+trackeval.utils.TrackEvalException: File pig_2.txt cannot be read because it is either not present or invalidly formatted
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 81, in evaluate
+    results = pool.map(_eval_sequence, seq_list)
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/multiprocessing/pool.py", line 774, in get
+    raise self._value
+trackeval.utils.TrackEvalException: File pig_2.txt cannot be read because it is either not present or invalidly formatted
+
+
+
+
+
+MotChallenge2DBox
+
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/_base_dataset.py", line 159, in _load_simple_text_file
+    dialect = csv.Sniffer().sniff(fp.readline(), delimiters=force_delimiters)  # Auto determine structure.
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/csv.py", line 187, in sniff
+    raise Error("Could not determine delimiter")
+_csv.Error: Could not determine delimiter
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 191, in eval_sequence
+    raw_data = dataset.get_raw_seq_data(tracker, seq)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/_timing.py", line 64, in wrap
+    return f(*args, **kw)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/_base_dataset.py", line 93, in get_raw_seq_data
+    raw_tracker_data = self._load_raw_file(tracker, seq, is_gt=False)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 200, in _load_raw_file
+    read_data, ignore_data = self._load_simple_text_file(file, is_zipped=self.data_is_zipped, zip_file=zip_file)
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/datasets/_base_dataset.py", line 209, in _load_simple_text_file
+    raise TrackEvalException(
+trackeval.utils.TrackEvalException: File insect-0.txt cannot be read because it is either not present or invalidly formatted
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/vast-nhr/projects/nib00021/repos_jan/sam2track_multiclass_kf/TrackEval/trackeval/eval.py", line 81, in evaluate
+    results = pool.map(_eval_sequence, seq_list)
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/mnt/lustre-grete/usr/u17635/micromamba/envs/netrack/lib/python3.10/multiprocessing/pool.py", line 774, in get
+    raise self._value
+trackeval.utils.TrackEvalException: File insect-0.txt cannot be read because it is either not present or invalidly formatted
+
+
+
+
+
