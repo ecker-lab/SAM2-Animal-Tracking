@@ -59,7 +59,7 @@ for seq in sequences[:]:
         seq_dataset, batch_size=config['DETECTOR']['BATCH_SIZE'], collate_fn=custom_collate_fn)
 
     if config['DETECTOR']['LOAD_DETS']:
-        model.load_dets(output_det_file = os.path.join(
+        model.load_detections(det_path = os.path.join(
             output_dir,seq + '.pt'))
 
     if config['SAVE_DETS']:
